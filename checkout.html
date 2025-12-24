@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phytomed - Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Phytomed</a>
+             <a href="index.html" class="logo">
+                    <img src="images/icon.jpg" alt="Phytomed" class="logo-img">
+                    <span class="sr-only">Phytomed</span>
+                </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="checkout-page">
+        <div class="container">
+            <h1>Checkout</h1>
+            <div class="checkout-container">
+                <form id="checkout-form" class="checkout-form">
+                    <h3>Transport Information</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Address" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="City" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="ZIP Code" required>
+                        </div>
+                    </div>
+
+                    <h3>Payment Details</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Card Number" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="CVV" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn">Place Order</button>
+                </form>
+
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div class="order-items">
+                        <!-- Order items will be loaded here -->
+                    </div>
+                    <div class="summary-total">
+                        <span>Total:</span>
+                        <span class="order-total">$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Forward Tuvarave Phytomed 2026. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
